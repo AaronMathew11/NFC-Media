@@ -78,21 +78,29 @@ const Dashboard: React.FC = () => {
             {/* Emergency Contacts */}
             <button 
               onClick={() => navigate('/emergency-contacts')}
-              className="bg-red-500 rounded-2xl p-4 text-white hover:bg-red-600 transition-colors"
+              className="bg-white rounded-2xl p-4 hover:bg-gray-50 transition-colors border border-gray-200"
             >
               <div className="text-center">
-                <div className="text-2xl mb-2">🚨</div>
-                <h3 className="font-bold text-sm">Emergency</h3>
-                <p className="text-xs opacity-90">Contacts</p>
+                <div className="w-8 h-8 mx-auto mb-2 rounded-full bg-red-100 flex items-center justify-center">
+                  <svg className="w-4 h-4 text-red-600" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M12 9v2m0 4h.01M21 12a9 9 0 11-18 0 9 9 0 0118 0z" />
+                  </svg>
+                </div>
+                <h3 className="font-bold text-sm text-gray-900">Emergency</h3>
+                <p className="text-xs text-gray-600">Contacts</p>
               </div>
             </button>
 
-            {/* Media Files */}
-            <div className="bg-gray-800 rounded-2xl p-4 text-white">
+            {/* Lyrics Generator */}
+            <div className="bg-white rounded-2xl p-4 border border-gray-200">
               <div className="text-center">
-                <div className="text-2xl mb-2">⭐</div>
-                <h3 className="font-bold text-sm">Media Files</h3>
-                <p className="text-xs opacity-90">38+ files</p>
+                <div className="w-8 h-8 mx-auto mb-2 rounded-full bg-blue-100 flex items-center justify-center">
+                  <svg className="w-4 h-4 text-blue-600" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 19V6l12-3v13M9 19c0 1.105-1.343 2-3 2s-3-.895-3-2 1.343-2 3-2 3 .895 3 2zm12-3c0 1.105-1.343 2-3 2s-3-.895-3-2 1.343-2 3-2 3 .895 3 2zM9 10l12-3" />
+                  </svg>
+                </div>
+                <h3 className="font-bold text-sm text-gray-900">Lyrics Generator</h3>
+                <p className="text-xs text-gray-600">38+ files</p>
               </div>
             </div>
           </div>

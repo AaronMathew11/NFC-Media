@@ -95,8 +95,8 @@ const EmergencyContacts: React.FC = () => {
             <a 
               key={index}
               href={`tel:${contact.phone}`} 
-              className="bg-white rounded-xl block transition-all duration-200 hover:scale-[0.98]"
-              style={{ boxShadow: '0 1px 3px rgba(0, 0, 0, 0.1)' }}
+              className="bg-white rounded-xl block transition-all duration-200 hover:scale-[0.98] no-underline"
+              style={{ boxShadow: '0 1px 3px rgba(0, 0, 0, 0.1)', textDecoration: 'none' }}
             >
               <div className="p-4">
                 <div className="flex items-center justify-between">

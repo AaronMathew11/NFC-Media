@@ -373,6 +373,15 @@ input, button, textarea {
   min-width: 44px;
 }
 
+/* Remove underlines from all links */
+a {
+  text-decoration: none !important;
+}
+
+a:hover {
+  text-decoration: none !important;
+}
+
 @media (min-width: 640px) {
   .sm\:px-6 { padding-left: 1.5rem; padding-right: 1.5rem; }
   .sm\:px-0 { padding-left: 0px; padding-right: 0px; }
